@@ -13,14 +13,17 @@
   "repository": "",
   "author": "MalawaDev",
   "license": "MIT",
-  "contributors": [{
-    "name": "Malawa",
-    "url": "https://malawa.dev"
-  }],
+  "contributors": [
+    {
+      "name": "Malawa",
+      "url": "https://malawa.dev"
+    }
+  ],
   "devDependencies": {
     "@electron/asar": "^3.2.3",
     "@types/discord-rpc": "^4.0.3",
     "electron": "^22.0.0",
+    "electron-packager": "^17.1.1",
     "typescript": "^4.8.3"
   },
   "dependencies": {
