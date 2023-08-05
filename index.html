@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Usagi 🐇</title>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+  <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <img id="background"></img>
+  <video src="" id="backgroundvid"></video>
+  <div id="winbar">
+    <div id="windragbar">
+      <p>Usagi 🐇</p>
+    </div>
+    <button id="minimizebutton" class="winbarbutton">-</button>
+    <button id="maximizebutton" class="winbarbutton">□</button>
+    <button id="closebutton" class="winbarbutton">X</button>
+  </div>
+  <div id="topbar">
+    <div id="searchbar">
+      <input type="text" id="searchbox">
+      <button id="searchbutton" class="topbutton">🔎</button>
+    </div>
+    <button id="songtogglebutton" class="topbutton">👓</button>
+    <button id="queuetogglebutton" class="topbutton">📜</button>
+    <button id="cmdbutton" class="topbutton">🔧</button>
+    <button id="settingsbutton" class="topbutton">🔩</button>
+  </div>
+  <div id="content">
+
+    <div id="settings">
+      <h1>Settings</h1>
+      <button id="settingssongsdir" class="settingsbutton">Songs Directory</button>
+      
+      <a href="#" id="discordlink">
+        Support Discord server
+      </a>
+    </div>
+
+    <div id="songs">
+    </div>
+
+    <div id="queue">
+      <h1>Queue</h1>
+      <div id="queueremaining"></div>
+    </div>
+
+    <div id="player">
+      <img id="songcover">
+      <div id="nowplaying">
+        <h2 id="songtitle">Standby</h2>
+        <h3 id="artist">Play a song!</h3>
+      </div>
+      <h3 id="playtime"></h3>
+      <div id="controls">
+        <input type="range" id="songbar" class="slider" value="0">
+        <div id="controlinputs">
+          <button id="favbutton" class="songbarbutton">⭐</button>
+          <button id="loop" class="songbarbutton">🔂</button>
+          <button id="playpause" class="songbarbutton">▶</button>
+          <button id="speed" class="songbarbutton">DT</button>
+          <div id="spacer"></div>
+          <div id="volume">
+            <h3>🔈</h3>
+            <input type="range" id="volumebar" class="slider" min="0" max="100" value="20">
+            <h3>🔊</h3>
+          </div>
+        </div>
+      </div>
+      <h3 id="remainingtime"></h3>
+    </div>
+    <div id="notification"><h2 id="notificationtext"></h2></div>
+  </div>
+
+  <script src="./dist/renderer.js"></script>
+</body>
+
+</html>

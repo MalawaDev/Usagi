@@ -1,0 +1,30 @@
+{
+  "name": "usagi",
+  "version": "1.0.0",
+  "description": "Fan-made music player for Osu! files. Not affiliated with Osu!",
+  "main": "./dist/main.js",
+  "homepage": "https://usagi.malawa.dev/en",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "start": "npm run build && electron ./dist/main.js",
+    "export": "npm run build && electron-packager . Usagi --platform=win32 --arch=x64 --overwrite --asar --out=build"
+  },
+  "repository": "",
+  "author": "MalawaDev",
+  "license": "MIT",
+  "contributors": [{
+    "name": "Malawa",
+    "url": "https://malawa.dev"
+  }],
+  "devDependencies": {
+    "@electron/asar": "^3.2.3",
+    "@types/discord-rpc": "^4.0.3",
+    "electron": "^22.0.0",
+    "typescript": "^4.8.3"
+  },
+  "dependencies": {
+    "discord-rpc": "^4.0.1",
+    "regedit": "^5.1.2"
+  }
+}
