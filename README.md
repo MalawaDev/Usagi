@@ -1,5 +1,6 @@
-# Usagi, a music player for your Osu! beatmaps
-### Usagi is a fan-made project, and it is not affiliated with Osu!
+# Usagi
+### Written in TS and using Electron, Usagi is a music player for your Osu! beatmaps.
+> Usagi is a fan-made project, and it is not affiliated with Osu!
 
 ## Features
 - Play songs on DT or NC
