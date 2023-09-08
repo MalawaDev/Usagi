@@ -26,7 +26,8 @@ const createWindow = () => {
     width: 1400,
     minWidth: 600,
     minHeight: 400,
-    frame: false
+    frame: false,
+    icon: "../icon.ico"
   });
 
   mainWindow.loadFile(path.join(__dirname, "../index.html"));

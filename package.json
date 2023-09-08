@@ -4,11 +4,12 @@
   "description": "Fan-made music player for Osu! files. Not affiliated with Osu!",
   "main": "./dist/main.js",
   "homepage": "https://usagi.malawa.dev/en",
+  "icon": "./icon.ico",
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
     "start": "npm run build && electron ./dist/main.js",
-    "export": "npm run build && electron-packager . Usagi --platform=win32 --arch=x64 --overwrite --asar --out=build"
+    "export": "npm run build && electron-packager . Usagi --platform=win32 --arch=x64 --overwrite --asar --out=build --appCopyright=Malawa --icon=icon.ico"
   },
   "repository": "",
   "author": "MalawaDev",
